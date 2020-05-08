@@ -1,9 +1,7 @@
 $(document).ready(function(){
-    /**
-     * При прокрутке страницы, показываем или скрываем кнопку
-     */
+
     $(window).scroll(function () {
-        // Если отступ сверху больше 50px то показываем кнопку "Наверх"
+
         if ($(this).scrollTop() > 50) {
             $('#button-up').fadeIn();
         } else {
@@ -11,7 +9,7 @@ $(document).ready(function(){
         }
     });
 
-    /** При нажатии на кнопку мы перемещаемся к началу страницы */
+
     $('#button-up').click(function () {
         $('body,html').animate({
             scrollTop: 0
@@ -19,4 +17,18 @@ $(document).ready(function(){
         return false;
     });
 
+});
+
+
+$(function() {
+    var header = $(".navbar");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 60) {
+            header.addClass('navbar-in-top');
+        } else {
+            header.removeClass("navbar-in-top");
+        }
+    });
 });
