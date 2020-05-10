@@ -227,3 +227,24 @@ footer {
   font-size: 50px;
   color: #4BD1A0;
 }
+
+
+.toto {
+  padding-left: 10%;
+}
+
+.dodo {
+  width: 90%;
+}
+
+.tov_text {
+  width: 80%;
+  margin: 0 auto;
+  padding-left: 10%;
+}
+
+.pic_tov {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
